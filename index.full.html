@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GERMERIDE — Комплексные решения в сфере пожарной безопасности по России</title>
+  <meta name="description" content="GERMERIDE — комплексные решения в сфере пожарной безопасности по России. Проектирование, монтаж, сервис." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ff8a3c" />
+        <stop offset="100%" stop-color="#ff5a00" />
+      </linearGradient>
+      <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0%" stop-color="#ff5a00" />
+        <stop offset="55%" stop-color="#ff9a2b" />
+        <stop offset="100%" stop-color="#ffd66a" />
+      </linearGradient>
+      <linearGradient id="metalGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#dde2ea" />
+        <stop offset="50%" stop-color="#9097a3" />
+        <stop offset="100%" stop-color="#41464f" />
+      </linearGradient>
+      <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#3a3f47" />
+        <stop offset="100%" stop-color="#0f1216" />
+      </linearGradient>
+      <pattern id="brickPattern" width="22" height="10" patternUnits="userSpaceOnUse">
+        <rect width="22" height="10" fill="#5d3825"/>
+        <rect x="0" y="0" width="11" height="5" fill="#6e4730" stroke="#3a2418" stroke-width="0.5"/>
+        <rect x="11" y="0" width="11" height="5" fill="#6e4730" stroke="#3a2418" stroke-width="0.5"/>
+        <rect x="-5" y="5" width="11" height="5" fill="#6e4730" stroke="#3a2418" stroke-width="0.5"/>
+        <rect x="6" y="5" width="11" height="5" fill="#6e4730" stroke="#3a2418" stroke-width="0.5"/>
+        <rect x="17" y="5" width="11" height="5" fill="#6e4730" stroke="#3a2418" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="GERMERIDE">
+        <span class="brand-logo" aria-hidden="true">
+          <img src="./assets/logo.png" alt="" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">GERMERIDE</span>
+          <span class="brand-sub">Комплексные решения<br />пожарной безопасности</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Основная навигация">
+        <ul>
+          <li><span class="nav-link" data-disabled="true">О компании</span></li>
+          <li><span class="nav-link" data-disabled="true">Решения</span></li>
+          <li><span class="nav-link" data-disabled="true">Проекты</span></li>
+          <li><span class="nav-link" data-disabled="true">Услуги</span></li>
+          <li><span class="nav-link" data-disabled="true">Сертификация</span></li>
+          <li><span class="nav-link" data-disabled="true">Контакты</span></li>
+        </ul>
+      </nav>
+
+      <div class="contacts">
+        <a class="contact-item" href="tel:+74951234567">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92Z" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>+7 (495) 123-45-67</span>
+        </a>
+        <a class="contact-item" href="mailto:info@npomsk.ru">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="m22 6-10 7L2 6" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>info@npomsk.ru</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>
+            Комплексные решения<br />
+            пожарной безопасности<br />
+            <span class="hero-accent">под ключ</span>
+          </h1>
+          <p class="hero-sub">Проектирование, монтаж, сервис <span class="hero-brand">GERMERIDE</span>. 8+ лет опыта.</p>
+          <button type="button" class="btn btn-primary" id="heroCta">
+            Рассчитать проект
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <img src="./assets/hero-building.jpg" alt="Здание с системами пожарной безопасности" class="hero-image" />
+          <!-- old illustration kept off-DOM
+          <svg viewBox="0 0 760 540" xmlns="http://www.w3.org/2000/svg" class="hero-svg" style="display:none">
+            <defs>
+              <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#0f1318" />
+                <stop offset="100%" stop-color="#070a0d" />
+              </linearGradient>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M40 0H0V40" fill="none" stroke="#1a2128" stroke-width="1" />
+              </pattern>
+              <pattern id="microGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+                <path d="M10 0H0V10" fill="none" stroke="#13181f" stroke-width="0.6" />
+              </pattern>
+              <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
+                <stop offset="60%" stop-color="rgba(0,0,0,0)" />
+                <stop offset="100%" stop-color="rgba(0,0,0,0.55)" />
+              </radialGradient>
+              <linearGradient id="alarmGlow" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ffb060" />
+                <stop offset="100%" stop-color="#ff5a00" />
+              </linearGradient>
+            </defs>
+
+            <rect width="760" height="540" fill="url(#bgGrad)" />
+            <rect width="760" height="540" fill="url(#microGrid)" opacity="0.65" />
+            <rect width="760" height="540" fill="url(#grid)" opacity="0.5" />
+
+            <circle cx="500" cy="180" r="200" fill="rgba(255,122,26,0.06)" />
+            <circle cx="220" cy="380" r="180" fill="rgba(255,122,26,0.04)" />
+
+            <g>
+              <polygon points="380,160 580,210 580,420 380,460" fill="#0d141c" />
+              <polygon points="380,160 380,460 180,420 180,210" fill="#0a1018" />
+              <polygon points="380,160 580,210 380,260 180,210" fill="#0e1722" />
+              <g stroke="#1a2330" stroke-width="1">
+                <line x1="180" y1="280" x2="380" y2="280" />
+                <line x1="180" y1="350" x2="380" y2="350" />
+              </g>
+              <g stroke="#1a2330" stroke-width="1">
+                <line x1="380" y1="245" x2="580" y2="295" />
+                <line x1="380" y1="320" x2="580" y2="370" />
+              </g>
+              <g stroke="#141b25" stroke-width="1">
+                <line x1="245" y1="227" x2="245" y2="437" />
+                <line x1="310" y1="220" x2="310" y2="450" />
+              </g>
+              <g stroke="#141b25" stroke-width="1">
+                <line x1="445" y1="180" x2="445" y2="437" />
+                <line x1="510" y1="195" x2="510" y2="425" />
+              </g>
+
+              <g stroke="url(#orangeGrad)" stroke-width="1.8" fill="none" stroke-linejoin="round">
+                <polygon points="380,160 580,210 580,420 380,460" />
+                <polygon points="380,160 380,460 180,420 180,210" />
+                <polygon points="380,160 580,210 380,260 180,210" />
+              </g>
+
+              <g stroke="rgba(255,138,60,0.45)" stroke-width="1" fill="none">
+                <line x1="280" y1="185" x2="480" y2="235" />
+                <line x1="280" y1="210" x2="480" y2="260" />
+                <line x1="245" y1="218" x2="320" y2="237" />
+                <line x1="380" y1="200" x2="380" y2="260" />
+                <line x1="280" y1="185" x2="280" y2="225" />
+                <line x1="480" y1="235" x2="480" y2="270" />
+              </g>
+
+              <g stroke="#ff7a1a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M195 245 H 365 V 320 H 195" />
+                <path d="M195 405 H 365" />
+                <path d="M260 245 V 405" />
+                <path d="M395 270 L 565 312 L 565 395 L 395 355 Z" opacity="0.95" />
+                <path d="M225 245 V 405" opacity="0.7" />
+                <path d="M340 245 V 405" opacity="0.7" />
+              </g>
+
+              <g>
+                <g transform="translate(225,245)">
+                  <circle r="3.5" fill="#ff7a1a"/>
+                  <path d="M-2 0 L 0 7 L 2 0" fill="#ff7a1a"/>
+                </g>
+                <g transform="translate(290,245)">
+                  <circle r="3.5" fill="#ff7a1a"/>
+                  <path d="M-2 0 L 0 7 L 2 0" fill="#ff7a1a"/>
+                </g>
+                <g transform="translate(355,245)">
+                  <circle r="3.5" fill="#ff7a1a"/>
+                  <path d="M-2 0 L 0 7 L 2 0" fill="#ff7a1a"/>
+                </g>
+              </g>
+
+              <g fill="#dde2ea" stroke="#ff7a1a" stroke-width="1.2">
+                <circle cx="275" cy="200" r="4" />
+                <circle cx="345" cy="218" r="4" />
+                <circle cx="415" cy="218" r="4" />
+                <circle cx="475" cy="235" r="4" />
+              </g>
+
+              <g transform="translate(498,335)">
+                <rect width="22" height="32" fill="#10161e" stroke="#ff7a1a" stroke-width="1.4" rx="2" />
+                <rect x="3" y="4" width="16" height="6" fill="#1a2330" />
+                <circle cx="7" cy="18" r="1.3" fill="url(#alarmGlow)" />
+                <circle cx="11" cy="18" r="1.3" fill="#3a4250" />
+                <circle cx="15" cy="18" r="1.3" fill="#3a4250" />
+                <rect x="4" y="22" width="14" height="2" fill="#3a4250" />
+                <rect x="4" y="26" width="10" height="2" fill="#3a4250" />
+              </g>
+
+              <g transform="translate(295,330)">
+                <rect width="30" height="65" fill="#1d242e" stroke="#ff7a1a" stroke-width="1.5" />
+                <rect x="3" y="4" width="24" height="22" fill="#0e1722" />
+                <circle cx="25" cy="35" r="1.5" fill="#ff7a1a" />
+                <text x="15" y="58" text-anchor="middle" fill="#ff7a1a" font-family="Inter, sans-serif" font-size="9" font-weight="700">EI 60</text>
+              </g>
+
+              <g transform="translate(420,360)">
+                <circle r="9" fill="#10161e" stroke="#ff7a1a" stroke-width="1.5" />
+                <path d="M-9 0 H 9 M 0 -9 V 9" stroke="#ff7a1a" stroke-width="1.5" />
+                <rect x="-3" y="-15" width="6" height="6" fill="#ff7a1a" />
+              </g>
+
+              <g transform="translate(530,255)">
+                <rect width="34" height="14" fill="#10161e" stroke="#ff7a1a" stroke-width="1.4" rx="2" />
+                <line x1="6" y1="3" x2="6" y2="11" stroke="#ff7a1a" stroke-width="1" />
+                <line x1="13" y1="3" x2="13" y2="11" stroke="#ff7a1a" stroke-width="1" />
+                <line x1="20" y1="3" x2="20" y2="11" stroke="#ff7a1a" stroke-width="1" />
+                <line x1="27" y1="3" x2="27" y2="11" stroke="#ff7a1a" stroke-width="1" />
+              </g>
+            </g>
+
+            <g stroke="#ff7a1a" stroke-width="1.3" fill="none" stroke-linecap="round">
+              <path d="M275 200 L 200 110 L 60 110" />
+              <path d="M225 245 L 130 200 L 30 200" />
+              <path d="M547 262 L 640 180 L 720 180" />
+              <path d="M310 360 L 130 470 L 30 470" />
+              <path d="M429 360 L 640 470 L 720 470" />
+            </g>
+            <g fill="#e6ecf3" font-family="Inter, sans-serif" font-size="14" font-weight="600">
+              <text x="60" y="105" text-anchor="end">Пожарная</text>
+              <text x="60" y="122" text-anchor="end">сигнализация</text>
+
+              <text x="30" y="195" text-anchor="end">Спринклерная</text>
+              <text x="30" y="212" text-anchor="end">система</text>
+
+              <text x="640" y="175">Дымоудаление</text>
+
+              <text x="30" y="465" text-anchor="end">Противопожарные</text>
+              <text x="30" y="482" text-anchor="end">двери и преграды</text>
+
+              <text x="640" y="465">Водяное</text>
+              <text x="640" y="482">пожаротушение</text>
+            </g>
+
+            <rect width="760" height="540" fill="url(#vignette)" />
+          </svg>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <section class="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <h2 id="servicesTitle" class="visually-hidden">Этапы работ</h2>
+        <ul class="service-grid">
+          <li><button type="button" class="service-card" data-disabled="true">
+            <span class="service-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="13" height="18" rx="1.5"/><path d="M9 7h6M9 11h6M9 15h4"/><circle cx="14.5" cy="15.5" r="2.2"/><path d="m16 17 2 2"/></svg>
+            </span>
+            <span class="service-num">01</span>
+            <span class="service-title">Обследование объекта</span>
+            <span class="service-desc">Анализ требований и оценка рисков</span>
+          </button></li>
+          <li><button type="button" class="service-card" data-disabled="true">
+            <span class="service-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h14l4 4v12H3z"/><path d="M17 4v4h4"/><path d="M7 12h8M7 16h6"/></svg>
+            </span>
+            <span class="service-num">02</span>
+            <span class="service-title">Проектирование</span>
+            <span class="service-desc">Разработка проектной документации</span>
+          </button></li>
+          <li><button type="button" class="service-card" data-disabled="true">
+            <span class="service-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg>
+            </span>
+            <span class="service-num">03</span>
+            <span class="service-title">Поставка оборудования</span>
+            <span class="service-desc">Подбор и поставка сертифицированного оборудования</span>
+          </button></li>
+          <li><button type="button" class="service-card" data-disabled="true">
+            <span class="service-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7l3 3-9 9-4 1 1-4z"/><path d="M19 4l1 1-3 3-2-2z"/></svg>
+            </span>
+            <span class="service-num">04</span>
+            <span class="service-title">Монтажные работы</span>
+            <span class="service-desc">Профессиональный монтаж систем под ключ</span>
+          </button></li>
+          <li><button type="button" class="service-card" data-disabled="true">
+            <span class="service-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 8h6M9 12h6"/><path d="m9 16 2 2 4-4"/></svg>
+            </span>
+            <span class="service-num">05</span>
+            <span class="service-title">Документация</span>
+            <span class="service-desc">Подготовка исполнительной документации</span>
+          </button></li>
+          <li><button type="button" class="service-card" data-disabled="true">
+            <span class="service-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+            </span>
+            <span class="service-num">06</span>
+            <span class="service-title">Сервисное обслуживание</span>
+            <span class="service-desc">Техническая поддержка и регулярное ТО</span>
+          </button></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="projects-head">
+          <h2 id="projectsTitle">Реализованные проекты</h2>
+          <a href="#" class="link-accent" data-disabled="true">Смотреть все проекты →</a>
+        </div>
+        <div class="project-grid">
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="./assets/proj-1-wildberries.jpg" alt="" />
+            </div>
+            <div class="project-body">
+              <h3>Складской комплекс Wildberries</h3>
+              <p class="project-meta"><svg class="pin-icon" width="12" height="14" viewBox="0 0 24 28" fill="#ff7a1a" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 16 12 16s12-7 12-16C24 5.4 18.6 0 12 0zm0 16.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z"/></svg>Московская область, Коледино</p>
+              <p class="project-desc"><svg class="desc-icon" width="12" height="14" viewBox="0 0 24 28" fill="none" stroke="#ff7a1a" stroke-width="2" aria-hidden="true"><path d="M12 1L3 5v8c0 6 4 11 9 13 5-2 9-7 9-13V5l-9-4zM8 14l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>Система пожаротушения<br/>площадью 118 000 м²</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="./assets/proj-2-ozon.jpg" alt="" />
+            </div>
+            <div class="project-body">
+              <h3>Складской комплекс Ozon</h3>
+              <p class="project-meta"><svg class="pin-icon" width="12" height="14" viewBox="0 0 24 28" fill="#ff7a1a" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 16 12 16s12-7 12-16C24 5.4 18.6 0 12 0zm0 16.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z"/></svg>Московская область, Подольск</p>
+              <p class="project-desc"><svg class="desc-icon" width="12" height="14" viewBox="0 0 24 28" fill="none" stroke="#ff7a1a" stroke-width="2" aria-hidden="true"><path d="M12 1L3 5v8c0 6 4 11 9 13 5-2 9-7 9-13V5l-9-4zM8 14l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>Система пожаротушения<br/>площадью 92 000 м²</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="./assets/proj-3-auchan.jpg" alt="" />
+            </div>
+            <div class="project-body">
+              <h3>Магазины и склады Ашан</h3>
+              <p class="project-meta"><svg class="pin-icon" width="12" height="14" viewBox="0 0 24 28" fill="#ff7a1a" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 16 12 16s12-7 12-16C24 5.4 18.6 0 12 0zm0 16.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z"/></svg>Разные регионы РФ</p>
+              <p class="project-desc"><svg class="desc-icon" width="12" height="14" viewBox="0 0 24 28" fill="none" stroke="#ff7a1a" stroke-width="2" aria-hidden="true"><path d="M12 1L3 5v8c0 6 4 11 9 13 5-2 9-7 9-13V5l-9-4zM8 14l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>Системы пожарной сигнализации<br/>площадью более 150 000 м²</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="./assets/proj-4-vdnh.jpg" alt="" />
+              <!-- old SVG kept commented
+              <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none">
+                <defs>
+                  <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#1a2a4a" />
+                    <stop offset="100%" stop-color="#0a1424" />
+                  </linearGradient>
+                  <linearGradient id="goldG" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#ffd766" />
+                    <stop offset="100%" stop-color="#b08220" />
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="240" fill="url(#skyG)"/>
+                <rect x="-10" y="190" width="340" height="80" fill="#0a1830"/>
+                <g>
+                  <rect x="60" y="150" width="200" height="40" fill="#c9a04a"/>
+                  <rect x="60" y="150" width="200" height="6" fill="#ffd766"/>
+                  <g fill="#2a1a0c">
+                    <rect x="78" y="160" width="18" height="30"/>
+                    <rect x="120" y="160" width="18" height="30"/>
+                    <rect x="162" y="160" width="18" height="30"/>
+                    <rect x="204" y="160" width="18" height="30"/>
+                    <rect x="246" y="160" width="14" height="30"/>
+                  </g>
+                  <rect x="130" y="100" width="60" height="50" fill="#d8b25a"/>
+                  <polygon points="130,100 160,80 190,100" fill="#ffd766"/>
+                  <g fill="#2a1a0c">
+                    <rect x="138" y="116" width="10" height="30"/>
+                    <rect x="155" y="116" width="10" height="30"/>
+                    <rect x="172" y="116" width="10" height="30"/>
+                  </g>
+                  <ellipse cx="160" cy="80" rx="22" ry="14" fill="url(#goldG)"/>
+                  <rect x="158" y="55" width="4" height="22" fill="#ffd766"/>
+                  <polygon points="160,52 156,40 164,40" fill="#ffd766"/>
+                  <polygon points="160,38 161,42 165,42 162,44 163,48 160,46 157,48 158,44 155,42 159,42" fill="#ffe49a"/>
+                </g>
+                <g fill="#ff7a1a"><circle cx="80" cy="150" r="2.5"/><circle cx="160" cy="100" r="2.5"/><circle cx="240" cy="150" r="2.5"/></g>
+              </svg>
+              -->
+            </div>
+            <div class="project-body">
+              <h3>ВДНХ</h3>
+              <p class="project-meta"><svg class="pin-icon" width="12" height="14" viewBox="0 0 24 28" fill="#ff7a1a" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 16 12 16s12-7 12-16C24 5.4 18.6 0 12 0zm0 16.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z"/></svg>Москва</p>
+              <p class="project-desc"><svg class="desc-icon" width="12" height="14" viewBox="0 0 24 28" fill="none" stroke="#ff7a1a" stroke-width="2" aria-hidden="true"><path d="M12 1L3 5v8c0 6 4 11 9 13 5-2 9-7 9-13V5l-9-4zM8 14l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>Противопожарные системы<br/>на объектах комплекса</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="./assets/proj-5-nasledie.jpg" alt="" />
+              <!-- old SVG kept commented
+              <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none">
+                <defs>
+                  <linearGradient id="skyBR" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#3a2210" />
+                    <stop offset="100%" stop-color="#1a0e06" />
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="240" fill="url(#skyBR)"/>
+                <rect x="-10" y="210" width="340" height="40" fill="#0e0904"/>
+                <g>
+                  <rect x="25" y="50" width="80" height="160" fill="url(#brickPattern)"/>
+                  <rect x="25" y="50" width="80" height="6" fill="#3a2418"/>
+                  <g fill="#0a0b14">
+                    <rect x="33" y="65" width="14" height="18"/>
+                    <rect x="55" y="65" width="14" height="18"/>
+                    <rect x="77" y="65" width="14" height="18"/>
+                    <rect x="33" y="92" width="14" height="18"/>
+                    <rect x="55" y="92" width="14" height="18"/>
+                    <rect x="77" y="92" width="14" height="18"/>
+                    <rect x="33" y="119" width="14" height="18"/>
+                    <rect x="55" y="119" width="14" height="18"/>
+                    <rect x="77" y="119" width="14" height="18"/>
+                    <rect x="33" y="146" width="14" height="18"/>
+                    <rect x="55" y="146" width="14" height="18"/>
+                    <rect x="77" y="146" width="14" height="18"/>
+                    <rect x="33" y="173" width="14" height="18"/>
+                    <rect x="55" y="173" width="14" height="18"/>
+                    <rect x="77" y="173" width="14" height="18"/>
+                  </g>
+                </g>
+                <g>
+                  <rect x="115" y="80" width="80" height="130" fill="url(#brickPattern)"/>
+                  <rect x="115" y="80" width="80" height="6" fill="#3a2418"/>
+                  <g fill="#0a0b14">
+                    <rect x="123" y="92" width="14" height="18"/>
+                    <rect x="145" y="92" width="14" height="18"/>
+                    <rect x="167" y="92" width="14" height="18"/>
+                    <rect x="123" y="119" width="14" height="18"/>
+                    <rect x="145" y="119" width="14" height="18"/>
+                    <rect x="167" y="119" width="14" height="18"/>
+                    <rect x="123" y="146" width="14" height="18"/>
+                    <rect x="145" y="146" width="14" height="18"/>
+                    <rect x="167" y="146" width="14" height="18"/>
+                    <rect x="123" y="173" width="14" height="18"/>
+                    <rect x="145" y="173" width="14" height="18"/>
+                    <rect x="167" y="173" width="14" height="18"/>
+                  </g>
+                </g>
+                <g>
+                  <rect x="205" y="35" width="90" height="175" fill="url(#brickPattern)"/>
+                  <rect x="205" y="35" width="90" height="6" fill="#3a2418"/>
+                  <g fill="#0a0b14">
+                    <rect x="213" y="50" width="14" height="18"/>
+                    <rect x="235" y="50" width="14" height="18"/>
+                    <rect x="257" y="50" width="14" height="18"/>
+                    <rect x="279" y="50" width="14" height="18"/>
+                    <rect x="213" y="77" width="14" height="18"/>
+                    <rect x="235" y="77" width="14" height="18"/>
+                    <rect x="257" y="77" width="14" height="18"/>
+                    <rect x="279" y="77" width="14" height="18"/>
+                    <rect x="213" y="104" width="14" height="18"/>
+                    <rect x="235" y="104" width="14" height="18"/>
+                    <rect x="257" y="104" width="14" height="18"/>
+                    <rect x="279" y="104" width="14" height="18"/>
+                    <rect x="213" y="131" width="14" height="18"/>
+                    <rect x="235" y="131" width="14" height="18"/>
+                    <rect x="257" y="131" width="14" height="18"/>
+                    <rect x="279" y="131" width="14" height="18"/>
+                    <rect x="213" y="158" width="14" height="18"/>
+                    <rect x="235" y="158" width="14" height="18"/>
+                    <rect x="257" y="158" width="14" height="18"/>
+                    <rect x="279" y="158" width="14" height="18"/>
+                    <rect x="213" y="185" width="14" height="18"/>
+                    <rect x="235" y="185" width="14" height="18"/>
+                    <rect x="257" y="185" width="14" height="18"/>
+                    <rect x="279" y="185" width="14" height="18"/>
+                  </g>
+                </g>
+                <g fill="#ff7a1a"><circle cx="65" cy="50" r="2.5"/><circle cx="155" cy="80" r="2.5"/><circle cx="250" cy="35" r="2.5"/></g>
+              </svg>
+              -->
+            </div>
+            <div class="project-body">
+              <h3>Наследие на Преображенке</h3>
+              <p class="project-meta"><svg class="pin-icon" width="12" height="14" viewBox="0 0 24 28" fill="#ff7a1a" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 16 12 16s12-7 12-16C24 5.4 18.6 0 12 0zm0 16.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z"/></svg>Москва</p>
+              <p class="project-desc"><svg class="desc-icon" width="12" height="14" viewBox="0 0 24 28" fill="none" stroke="#ff7a1a" stroke-width="2" aria-hidden="true"><path d="M12 1L3 5v8c0 6 4 11 9 13 5-2 9-7 9-13V5l-9-4zM8 14l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>Системы пожарной безопасности<br/>в жилом комплексе</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="./assets/proj-6-sirenevy.jpg" alt="" />
+              <!-- old SVG kept commented
+              <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="display:none">
+                <defs>
+                  <linearGradient id="skyL" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#3a2960" />
+                    <stop offset="100%" stop-color="#1a1132" />
+                  </linearGradient>
+                  <linearGradient id="towerL" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#9a76d6" />
+                    <stop offset="100%" stop-color="#6a4ba6" />
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="240" fill="url(#skyL)"/>
+                <rect x="-10" y="210" width="340" height="40" fill="#100822"/>
+                <g>
+                  <rect x="25" y="65" width="60" height="145" fill="url(#towerL)"/>
+                  <g fill="#1c0e2e">
+                    <rect x="32" y="78" width="10" height="12"/><rect x="48" y="78" width="10" height="12"/><rect x="64" y="78" width="10" height="12"/>
+                    <rect x="32" y="98" width="10" height="12"/><rect x="48" y="98" width="10" height="12"/><rect x="64" y="98" width="10" height="12"/>
+                    <rect x="32" y="118" width="10" height="12"/><rect x="48" y="118" width="10" height="12"/><rect x="64" y="118" width="10" height="12"/>
+                    <rect x="32" y="138" width="10" height="12"/><rect x="48" y="138" width="10" height="12"/><rect x="64" y="138" width="10" height="12"/>
+                    <rect x="32" y="158" width="10" height="12"/><rect x="48" y="158" width="10" height="12"/><rect x="64" y="158" width="10" height="12"/>
+                    <rect x="32" y="178" width="10" height="12"/><rect x="48" y="178" width="10" height="12"/><rect x="64" y="178" width="10" height="12"/>
+                  </g>
+                </g>
+                <g>
+                  <rect x="95" y="40" width="65" height="170" fill="url(#towerL)"/>
+                  <g fill="#1c0e2e">
+                    <rect x="103" y="54" width="11" height="13"/><rect x="120" y="54" width="11" height="13"/><rect x="137" y="54" width="11" height="13"/>
+                    <rect x="103" y="74" width="11" height="13"/><rect x="120" y="74" width="11" height="13"/><rect x="137" y="74" width="11" height="13"/>
+                    <rect x="103" y="94" width="11" height="13"/><rect x="120" y="94" width="11" height="13"/><rect x="137" y="94" width="11" height="13"/>
+                    <rect x="103" y="114" width="11" height="13"/><rect x="120" y="114" width="11" height="13"/><rect x="137" y="114" width="11" height="13"/>
+                    <rect x="103" y="134" width="11" height="13"/><rect x="120" y="134" width="11" height="13"/><rect x="137" y="134" width="11" height="13"/>
+                    <rect x="103" y="154" width="11" height="13"/><rect x="120" y="154" width="11" height="13"/><rect x="137" y="154" width="11" height="13"/>
+                    <rect x="103" y="174" width="11" height="13"/><rect x="120" y="174" width="11" height="13"/><rect x="137" y="174" width="11" height="13"/>
+                    <rect x="103" y="194" width="11" height="13"/><rect x="120" y="194" width="11" height="13"/><rect x="137" y="194" width="11" height="13"/>
+                  </g>
+                </g>
+                <g>
+                  <rect x="170" y="80" width="60" height="130" fill="url(#towerL)"/>
+                  <g fill="#1c0e2e">
+                    <rect x="177" y="92" width="10" height="12"/><rect x="193" y="92" width="10" height="12"/><rect x="209" y="92" width="10" height="12"/>
+                    <rect x="177" y="112" width="10" height="12"/><rect x="193" y="112" width="10" height="12"/><rect x="209" y="112" width="10" height="12"/>
+                    <rect x="177" y="132" width="10" height="12"/><rect x="193" y="132" width="10" height="12"/><rect x="209" y="132" width="10" height="12"/>
+                    <rect x="177" y="152" width="10" height="12"/><rect x="193" y="152" width="10" height="12"/><rect x="209" y="152" width="10" height="12"/>
+                    <rect x="177" y="172" width="10" height="12"/><rect x="193" y="172" width="10" height="12"/><rect x="209" y="172" width="10" height="12"/>
+                    <rect x="177" y="192" width="10" height="12"/><rect x="193" y="192" width="10" height="12"/><rect x="209" y="192" width="10" height="12"/>
+                  </g>
+                </g>
+                <g>
+                  <rect x="240" y="55" width="60" height="155" fill="url(#towerL)"/>
+                  <g fill="#1c0e2e">
+                    <rect x="248" y="68" width="10" height="12"/><rect x="264" y="68" width="10" height="12"/><rect x="280" y="68" width="10" height="12"/>
+                    <rect x="248" y="88" width="10" height="12"/><rect x="264" y="88" width="10" height="12"/><rect x="280" y="88" width="10" height="12"/>
+                    <rect x="248" y="108" width="10" height="12"/><rect x="264" y="108" width="10" height="12"/><rect x="280" y="108" width="10" height="12"/>
+                    <rect x="248" y="128" width="10" height="12"/><rect x="264" y="128" width="10" height="12"/><rect x="280" y="128" width="10" height="12"/>
+                    <rect x="248" y="148" width="10" height="12"/><rect x="264" y="148" width="10" height="12"/><rect x="280" y="148" width="10" height="12"/>
+                    <rect x="248" y="168" width="10" height="12"/><rect x="264" y="168" width="10" height="12"/><rect x="280" y="168" width="10" height="12"/>
+                    <rect x="248" y="188" width="10" height="12"/><rect x="264" y="188" width="10" height="12"/><rect x="280" y="188" width="10" height="12"/>
+                  </g>
+                </g>
+                <g fill="#ff7a1a"><circle cx="55" cy="65" r="2.5"/><circle cx="125" cy="40" r="2.5"/><circle cx="200" cy="80" r="2.5"/><circle cx="270" cy="55" r="2.5"/></g>
+              </svg>
+              -->
+            </div>
+            <div class="project-body">
+              <h3>Сиреневый парк</h3>
+              <p class="project-meta"><svg class="pin-icon" width="12" height="14" viewBox="0 0 24 28" fill="#ff7a1a" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 16 12 16s12-7 12-16C24 5.4 18.6 0 12 0zm0 16.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z"/></svg>Москва</p>
+              <p class="project-desc"><svg class="desc-icon" width="12" height="14" viewBox="0 0 24 28" fill="none" stroke="#ff7a1a" stroke-width="2" aria-hidden="true"><path d="M12 1L3 5v8c0 6 4 11 9 13 5-2 9-7 9-13V5l-9-4zM8 14l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>Системы пожарной безопасности<br/>в жилом комплексе</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="ctaTitle">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <h2 id="ctaTitle">Рассчитать проект</h2>
+          <p>Оставьте заявку, и мы подготовим для вас индивидуальное решение</p>
+        </div>
+        <form class="cta-form" id="ctaForm" novalidate>
+          <label class="field">
+            <span class="visually-hidden">Ваше имя</span>
+            <input type="text" name="name" placeholder="Ваше имя*" required />
+          </label>
+          <label class="field">
+            <span class="visually-hidden">Телефон</span>
+            <input type="tel" name="phone" placeholder="Телефон*" required />
+          </label>
+          <label class="field">
+            <span class="visually-hidden">E-mail</span>
+            <input type="email" name="email" placeholder="E-mail*" required />
+          </label>
+          <label class="field field-file">
+            <input type="file" name="plan" accept=".pdf,.dwg,.jpg,.jpeg,.png" />
+            <span class="file-label">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7"/><path d="M16 6 12 2 8 6"/><path d="M12 2v14"/></svg>
+              <span class="file-text">
+                <strong>Загрузить план объекта</strong>
+                <em>PDF, DWG, JPG до 50 МБ</em>
+              </span>
+            </span>
+          </label>
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span>Я согласен на обработку <span class="link-accent">персональных данных</span></span>
+          </label>
+          <button type="submit" class="btn btn-primary btn-submit">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">GERMERIDE</span>
+        <span class="brand-sub">Комплексные решения в сфере пожарной безопасности по России</span>
+      </div>
+      <div class="footer-contacts">
+        <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+        <a href="mailto:info@npomsk.ru">info@npomsk.ru</a>
+      </div>
+      <div class="footer-meta">© <span id="year"></span> GERMERIDE. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
